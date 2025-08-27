@@ -1,0 +1,21 @@
+{
+    "name": "speed-test-node",
+    "version": "1.0.0",
+    "description": "Node.js performance tests",
+    "main": "index.js",
+    "scripts": {
+        "http-server": "node http-server.js",
+        "test:cpu": "node cpu-intensive.js",
+        "test:file-io": "node file-io.js",
+        "test:json": "node json-processing.js",
+        "test:concurrent": "node concurrent.js",
+        "test:http": "node ../benchmark/test-http.js node",
+        "benchmark": "node ../benchmark/run-all.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "artillery": "^2.0.0"
+    }
+}

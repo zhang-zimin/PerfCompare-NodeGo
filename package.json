@@ -1,0 +1,30 @@
+{
+    "name": "speed-test",
+    "version": "1.0.0",
+    "description": "Comprehensive Node.js vs Go performance comparison tests including CPU, I/O, JSON, and HTTP benchmarks",
+    "scripts": {
+        "install-deps": "cd node && npm install",
+        "benchmark": "node benchmark/run-all.js",
+        "test:cpu": "node benchmark/test-cpu.js",
+        "test:file-io": "node benchmark/test-file-io.js",
+        "test:json": "node benchmark/test-json.js",
+        "test:http": "echo 'Start servers first, then use: node benchmark/test-http.js <node|go>'",
+        "start:node-server": "cd node && node http-server.js",
+        "start:go-server": "cd go && go run http-server.go",
+        "go:cpu": "cd go/cpu && go run main.go",
+        "go:fileio": "cd go/fileio && go run main.go",
+        "go:json": "cd go/json && go run main.go",
+        "node:cpu": "cd node && node cpu-intensive.js",
+        "node:fileio": "cd node && node file-io.js",
+        "node:json": "cd node && node json-processing.js"
+    },
+    "keywords": [
+        "performance",
+        "benchmark",
+        "nodejs",
+        "go",
+        "comparison"
+    ],
+    "author": "",
+    "license": "MIT"
+}
